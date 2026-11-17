@@ -1,0 +1,155 @@
+import { StyleSheet } from 'react-native';
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#F4F4F4',
+    padding: 20,
+    paddingTop: 40,
+  },
+  titulo: {
+    fontSize: 21,
+    fontWeight: 'bold',
+    color: '#C62828',
+    marginBottom: 4,
+  },
+  gpsTexto: {
+    fontSize: 12,
+    color: '#555',
+    marginBottom: 10,
+  },
+  cardMonitorando: {
+    backgroundColor: '#FFF3E0',
+    borderWidth: 1,
+    borderColor: '#FF9800',
+    borderRadius: 8,
+    padding: 12,
+    marginBottom: 12,
+  },
+  monitorandoTitulo: {
+    fontSize: 16,
+    fontWeight: 'bold',
+    color: '#E65100',
+  },
+  monitorandoInfo: {
+    fontSize: 13,
+    color: '#333',
+    marginTop: 2,
+  },
+  monitorandoTempo: {
+    fontSize: 14,
+    fontWeight: 'bold',
+    color: '#2E7D32',
+    marginTop: 4,
+  },
+  linhaBotoes: {
+    flexDirection: 'row',
+    marginTop: 10,
+    gap: 8,
+  },
+  botaoTestar: {
+    flex: 1,
+    backgroundColor: '#EF6C00',
+    padding: 8,
+    borderRadius: 6,
+    alignItems: 'center',
+  },
+  botaoCancelar: {
+    backgroundColor: '#757575',
+    padding: 8,
+    paddingHorizontal: 14,
+    borderRadius: 6,
+    alignItems: 'center',
+  },
+  areaBusca: {
+    flexDirection: 'row',
+    marginBottom: 8,
+  },
+  input: {
+    flex: 1,
+    backgroundColor: '#FFF',
+    borderWidth: 1,
+    borderColor: '#CCC',
+    borderRadius: 8,
+    paddingHorizontal: 12,
+    height: 44,
+  },
+  botaoBuscar: {
+    backgroundColor: '#C62828',
+    justifyContent: 'center',
+    alignItems: 'center',
+    paddingHorizontal: 16,
+    borderRadius: 8,
+    marginLeft: 8,
+  },
+  botaoGPS: {
+    backgroundColor: '#2E7D32',
+    padding: 11,
+    borderRadius: 8,
+    alignItems: 'center',
+    marginBottom: 10,
+  },
+  botaoVoltar: {
+    backgroundColor: '#555',
+    padding: 10,
+    borderRadius: 8,
+    marginBottom: 10,
+    alignItems: 'center',
+  },
+  botaoAvisar: {
+    backgroundColor: '#1565C0',
+    padding: 10,
+    borderRadius: 8,
+    marginTop: 10,
+    alignItems: 'center',
+  },
+  textoBotao: {
+    color: '#FFF',
+    fontWeight: 'bold',
+    fontSize: 13,
+  },
+  status: {
+    fontSize: 13,
+    color: '#444',
+    fontStyle: 'italic',
+    marginBottom: 10,
+  },
+  card: {
+    backgroundColor: '#FFF',
+    padding: 14,
+    borderRadius: 8,
+    marginBottom: 10,
+    borderWidth: 1,
+    borderColor: '#E0E0E0',
+  },
+  cardTitulo: {
+    fontSize: 16,
+    fontWeight: 'bold',
+    color: '#222',
+  },
+  cardSubtitulo: {
+    fontSize: 13,
+    color: '#666',
+    marginTop: 2,
+  },
+  tempoDestaque: {
+    fontSize: 15,
+    fontWeight: 'bold',
+    color: '#2E7D32',
+    marginTop: 6,
+  },
+  link: {
+    color: '#C62828',
+    fontWeight: 'bold',
+    marginTop: 8,
+    fontSize: 13,
+  },
+  rodape: {
+    textAlign: 'center',
+    fontSize: 11,
+    color: '#777',
+    marginTop: 8,
+  },
+});
+
+export default styles;

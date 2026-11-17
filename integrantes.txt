@@ -1,0 +1,31 @@
+FIAP - 2º Ano de Ciência da Computação
+
+Disciplina: Cross-Platform Application Development
+
+Global Solution 2026.2 - Mobilidade em São Paulo com a API Olho Vivo (SPTrans)
+
+
+
+Aplicativo: Meu Ônibus Está Chegando
+
+
+
+Integrantes do Grupo e Divisão de Tarefas:
+
+
+
+1. Kaue Souza Rodrigues - RM: 567716
+
+   Responsável pela lógica em React, autenticação e consumo da API Olho Vivo (SPTrans), integração com o GPS (expo-location) e disparo de notificações e alertas (App.js) e gravação do vídeo demonstrativo.
+
+
+
+2. Pedro Henrique Camacho de Alencar - RM: 568071
+
+   Responsável pela estrutura visual da interface, listagem de paradas próximas e exibição das previsões de chegada (TelaPrincipal.js).
+
+
+
+3. Gabriel Kenishi Furuzawa - RM: 568245
+
+   Responsável pela estilização dos componentes (styles.js), documentação do projeto (README.md), testes no celular via Expo Go.
