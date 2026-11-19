@@ -5,7 +5,6 @@ import {
   TextInput,
   TouchableOpacity,
   FlatList,
-  SafeAreaView,
 } from 'react-native';
 import styles from './styles';
 
@@ -26,7 +25,7 @@ export default function TelaPrincipal({
   iniciarMonitoramento,
 }) {
   return (
-    <SafeAreaView style={styles.container}>
+    <View style={styles.container}>
       <Text style={styles.titulo}>🚌 Meu Ônibus Está Chegando</Text>
 
       {gpsUsuario && (
@@ -151,6 +150,6 @@ export default function TelaPrincipal({
       )}
 
       <Text style={styles.rodape}>Dados fornecidos pela API Olho Vivo - SPTrans</Text>
-    </SafeAreaView>
+    </View>
   );
 }

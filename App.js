@@ -1,5 +1,4 @@
-
-  import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Alert, Vibration } from 'react-native';
 import * as Location from 'expo-location';
 import * as Notifications from 'expo-notifications';
@@ -14,7 +13,6 @@ Notifications.setNotificationHandler({
 });
 
 export default function App() {
-  // COLE O SEU TOKEN DA SPTRANS AQUI
   const TOKEN_SPTRANS = '9600affd2d290155605c6ef0ca876287ea56960aa561b292df76f544b11d06bc';
   const URL_BASE = 'https://api.olhovivo.sptrans.com.br/v2.1';
 
@@ -213,7 +211,7 @@ export default function App() {
     }, 15000);
 
     return () => clearInterval(intervalo);
-  }, [monitorando, jaNotificou]);
+  }, [monitorando?.codigoParada, monitorando?.codigoLinha, jaNotificou]);
 
   async function verificarChegada() {
     if (!monitorando) return;

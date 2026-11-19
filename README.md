@@ -1,57 +1,25 @@
-Meu Ônibus Está Chegando - API Olho Vivo (SPTrans)
+# Meu Ônibus Está Chegando - API Olho Vivo (SPTrans)
 
 Aplicativo mobile desenvolvido em React Native com Expo para a Global Solution 2026.2 da FIAP (2º ano de Ciência da Computação — Cross-Platform Application Development).
 
 O objetivo do aplicativo é ajudar os passageiros de transporte público em São Paulo a encontrarem pontos de ônibus próximos e receberem avisos em tempo real quando a linha desejada estiver chegando.
 
-Funcionalidades
+## Funcionalidades
 
-Busca por Proximidade com GPS (expo-location): Obtém a latitude e longitude atuais do usuário e ordena os pontos de ônibus da SPTrans do mais próximo ao mais distante.
+- **Busca por Proximidade com GPS (`expo-location`):** Obtém a latitude e longitude atuais do usuário e ordena os pontos de ônibus da SPTrans do mais próximo ao mais distante.
+- **Consulta de Previsão em Tempo Real:** Exibe as linhas que passam no ponto selecionado e calcula quantos minutos faltam para o próximo ônibus chegar.
+- **Monitoramento e Alerta de Chegada (`expo-notifications`, `Alert` e `Vibration`):** Atualiza a previsão automaticamente a cada 15 segundos e dispara uma notificação local, alerta na tela e vibração quando o ônibus está a 5 minutos ou menos do ponto.
 
-Consulta de Previsão em Tempo Real: Exibe as linhas que passam no ponto selecionado e calcula quantos minutos faltam para o próximo ônibus chegar.
+## Estrutura do Projeto
 
-Monitoramento e Alerta de Chegada (expo-notifications, Alert e Vibration): Atualiza a previsão automaticamente a cada 15 segundos e dispara uma notificação local, alerta na tela e vibração quando o ônibus está a 5 minutos ou menos do ponto.
+- `App.js`: Lógica principal em React, autenticação com token na API da SPTrans, leitura do GPS, cálculo de distância/tempo e controle das notificações.
+- `TelaPrincipal.js`: Componentes visuais da interface (barra de busca, lista de paradas, previsão das linhas e painel de monitoramento).
+- `styles.js`: Estilização da interface com `StyleSheet`.
+- `integrantes.txt`: Lista dos participantes do grupo e divisão de responsabilidades.
 
-Estrutura do Projeto
+## Como Executar o Projeto
 
-App.js: Lógica principal em React, autenticação com token na API da SPTrans, leitura do GPS, cálculo de distância/tempo e controle das notificações.
-
-TelaPrincipal.js: Componentes visuais da interface (barra de busca, lista de paradas, previsão das linhas e painel de monitoramento).
-
-styles.js: Estilização da interface com StyleSheet.
-
-integrantes.txt: Lista dos participantes do grupo e divisão de responsabilidades.
-
-Como Executar o Projeto
-
-Clone este repositório:
-
-git clone https://github.com/kaue-sr/gs-2026-meu-onibus-sptrans.git
-cd gs-2026-meu-onibus-sptrans
-
-
-Instale as dependências:
-
-npm install
-
-
-Configure o Token da SPTrans:
-
-Crie uma conta na Área de Desenvolvedores da SPTrans e gere um token em Meus Aplicativos.
-
-Abra o arquivo App.js e substitua 'COLE_SEU_TOKEN_AQUI' pelo seu token.
-
-Inicie o servidor do Expo:
-
-npx expo start
-
-
-(Caso esteja em uma rede Wi-Fi com bloqueio de portas, utilize npx expo start --tunnel ngrok.)
-
-Abra no celular:
-
-Instale o aplicativo Expo Go (Android ou iOS) e escaneie o QR Code exibido no terminal.
-
-Fonte de Dados
-
-Dados de linhas, paradas e previsões fornecidos publicamente pela API Olho Vivo - SPTrans.
+1. **Clone este repositório:**
+   ```bash
+   git clone [https://github.com/kaue-sr/gs-2026-meu-onibus-sptrans.git](https://github.com/kaue-sr/gs-2026-meu-onibus-sptrans.git)
+   cd gs-2026-meu-onibus-sptrans
